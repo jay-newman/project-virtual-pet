@@ -17,7 +17,7 @@ class CustomUserCreateViewTest(TestCase):
     # This may be working because 405 means not authorized but also no clue b/ anyone should be able to register
     def test_view_url_accessible_by_name(self):
         response = self.client.get(reverse('db:create_user'))
-        self.assertEqual(response.status_code, 405)
+        self.assertEqual(response.status_code, 200)
 
 
 
