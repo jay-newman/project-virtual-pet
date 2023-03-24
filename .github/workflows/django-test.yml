@@ -2,11 +2,9 @@ name: Django Unit Testing
 
 on:
   
-  # pull_request:
-  #   branches: [main]
-  push:
+  pull_request:
     branches: [main]
-
+  
 jobs:
   test_project:
     runs-on: ubuntu-latest
